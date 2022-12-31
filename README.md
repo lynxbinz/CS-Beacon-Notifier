@@ -18,25 +18,26 @@ A Cobalt Strike Beacon Notifier Via Telegram Bot.
 * Python3 Pip
 
 ## Setup
-```
+```console
 git clone https://github.com/lynxbinz/CS-Beacon-Notifier.git
 cd CS-Beacon-Notifier
 pip3 install requests
 ```
-* Make sure you have changed the pyScript path in the CSB-Notifier.cna script on the line 5
-```
+* Make sure you have changed the pyScript path in CSB-Notifier.cna script on the line 5
+```console
 $pyScript = "/home/[username]/[cs-path]/CS-Beacon-Notifier/pyScript.py";
 ```
-* You can change the Default language to English in the CSB-Notifier.cna script on the line 36
-```
+* You can change the Default language to English in CSB-Notifier.cna script on the line 36
+```console
 @command = @('python3',$pyScript,$infoText_kh); # Change to $infoText_en and Save
 ```
 * Now Load the script via Cobalt Strike Script Manager as show below
-
-* ![Load CNA Script](https://github.com/lynxbinz/CS-Beacon-Notifier/blob/main/load-cna-script.png?raw=true | width=300)
+<p align="center">
+    <img src="https://github.com/lynxbinz/CS-Beacon-Notifier/blob/main/load-cna-script.png" alt="Image" width="600" />
+</p>
 
 * Open the pyScript.py and replace with your Telegram Bot Token and Chat ID
-```
+```python
 def telegram_bot_msgSender(msg):
     teleBot_token = 'xxxxxxx:xxxxxxxxxxxxxxxxxxxxxxxxxxxx'
     teleBot_chatID = 'xxxxxxxxx'
@@ -47,10 +48,13 @@ def telegram_bot_msgSender(msg):
 * Kali Linux 2022.4
 * Cobalt Strike 4.7
 
-* Khmer Version
+### Khmer Version
+<p align="left">
+    <img src="https://github.com/lynxbinz/CS-Beacon-Notifier/blob/main/beacon-kh.png" alt="Image" width="800" />
+</p>
 
-* ![Beacon Notifier KH](https://github.com/lynxbinz/CS-Beacon-Notifier/blob/main/beacon-kh.png?raw=true | width=300)
+### English Version
 
-* English Version
-
-* ![Beacon Notifier EN](https://github.com/lynxbinz/CS-Beacon-Notifier/blob/main/beacon-en.png?raw=true | width=300)
+<p align="left">
+    <img src="https://github.com/lynxbinz/CS-Beacon-Notifier/blob/main/beacon-en.png" alt="Image" width="800" />
+</p>
