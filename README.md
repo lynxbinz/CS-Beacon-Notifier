@@ -33,7 +33,7 @@ $pyScript = "/home/[username]/[cs-path]/CS-Beacon-Notifier/pyScript.py";
 ```
 * Now Load the script via Cobalt Strike Script Manager as show below
 <p align="center">
-    <img src="https://github.com/lynxbinz/CS-Beacon-Notifier/blob/main/load-cna-script.png" alt="Image" width="600" />
+    <img src="https://github.com/lynxbinz/CS-Beacon-Notifier/blob/main/images/load-cna-script.png" alt="Image" width="600" />
 </p>
 
 * Open the pyScript.py and replace with your Telegram Bot Token and Chat ID
@@ -50,11 +50,11 @@ def telegram_bot_msgSender(msg):
 
 ### Khmer Version
 <p align="left">
-    <img src="https://github.com/lynxbinz/CS-Beacon-Notifier/blob/main/beacon-kh.png" alt="Image" width="800" />
+    <img src="https://github.com/lynxbinz/CS-Beacon-Notifier/blob/main/images/beacon-kh.png" alt="Image" width="800" />
 </p>
 
 ### English Version
 
 <p align="left">
-    <img src="https://github.com/lynxbinz/CS-Beacon-Notifier/blob/main/beacon-en.png" alt="Image" width="800" />
+    <img src="https://github.com/lynxbinz/CS-Beacon-Notifier/blob/main/images/beacon-en.png" alt="Image" width="800" />
 </p>
