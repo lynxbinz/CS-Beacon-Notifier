@@ -1,0 +1,38 @@
+# CS Beacon Notifier
+# A Cobalt Strike Beacon Notifier Via Telegram Bot
+# Author @lynxbinz
+
+$pyScript = "/home/[username]/[cs-path]/CS-Beacon-Notifier/pyScript.py";
+
+on beacon_initial {
+	$userName = beacon_info($1, "user");
+        $computerName = beacon_info($1, "computer");
+	$operatingSystem = beacon_info($1, "os");
+	$architecture = beacon_info($1, "arch");
+	$buildVersion = beacon_info($1, "build");
+        $inIP = beacon_info($1, "internal");
+        $exIP = beacon_info($1, "external");
+	$processName = beacon_info($1, "process");
+        $infoText_kh = "-----------------------------------------------------------
+លោកម្ចាស់ទទួលបានក្ដាន់មួយក្បាល!!!
+ឈ្មោះក្តាន់៖ $userName
+ឈ្មោះកុំព្យូទ័រ៖ $computerName
+ប្រព័ន្ធប្រតិបត្តិការ៖ $operatingSystem $architecture $buildVersion
+ដំណើរការតាម៖ $processName
+លេខអាយភីខាងក្នុង៖ $inIP
+លេខអាយភីខាងក្រៅ៖ $exIP
+-----------------------------------------------------------";
+
+	$infoText_en = "-----------------------------------------------------------
+You got a Beacon my Lord!!!
+User: $userName
+Computer Name: $computerName
+Operating System: $operatingSystem $architecture $buildVersion
+Process Name: $processName
+Internal IP: $inIP
+External IP: $exIP
+-----------------------------------------------------------";
+
+	@command = @('python3',$pyScript,$infoText_kh);
+	exec(@command);
+}
