@@ -39,8 +39,8 @@ $pyScript = "/home/[username]/[cs-path]/CS-Beacon-Notifier/pyScript.py";
 * Open the pyScript.py and replace with your Telegram Bot Token and Chat ID
 ```python
 def telegram_bot_msgSender(msg):
-    teleBot_token = 'xxxxxxx:xxxxxxxxxxxxxxxxxxxxxxxxxxxx'
-    teleBot_chatID = 'xxxxxxxxx'
+    teleBot_token = "xxxxxxxxx:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    teleBot_chatID = "xxxxxxxxxxxx"
 ```
 * Saved and Done.
 
