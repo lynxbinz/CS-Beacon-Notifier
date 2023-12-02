@@ -46,7 +46,7 @@ def telegram_bot_msgSender(msg):
 
 ## Tested On
 * Kali Linux 2023.3
-* Cobalt Strike 4.8
+* Cobalt Strike 4.9.1
 
 ### Khmer Version
 <p align="left">
